@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 
 			dist: {
 				files: {
-					'assets/css/annual-report.css' : 'assets/scss/annual-report.scss'
+					'assets/css/triangulator.css' : 'assets/scss/triangulator.scss'
 				}
 			}
 		},
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 		autoprefixer: {
             dist: {
                 files: {
-                    'assets/css/annual-report.css' : 'assets/css/annual-report.css'
+                    'assets/css/triangulator.css' : 'assets/css/triangulator.css'
                 }
             }
         },
@@ -45,8 +45,7 @@ module.exports = function(grunt) {
                     src : [
                         'assets/css/*.css',
 						'assets/images/**/*',
-                        '*.html',
-						'components/*.html'
+                        '*.html'
                     ]
                 },
 
@@ -57,7 +56,7 @@ module.exports = function(grunt) {
 			            baseDir: "./"
 			        },
 
-                    port: '5566'
+                    port: '9966'
                 }
             }
         }
